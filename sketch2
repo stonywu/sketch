@@ -1,0 +1,23 @@
+function setup() {
+  createCanvas(400, 400);
+  background(255);  // set the background
+}
+
+
+function keyPressed() {// when any key is pressed
+
+  
+  fill(255, 255, 0);  //yellow color
+  ellipse(width / 2, height / 2, 150, 100);//draw the ellipse
+}
+
+function keyReleased() {// when the key is released
+  
+  fill(0, 255, 0);  //green
+  ellipse(mouseX, mouseY, 50, 75);// draw the ellipse at mouse position
+}
+
+function doubleClicked() {//when double clicked mouse
+
+  background(255);  // become white again
+}
