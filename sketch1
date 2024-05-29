@@ -1,0 +1,22 @@
+const CHANGE=32; //the space bottom is 32
+
+function setup() {
+  createCanvas(400, 400);//create canvas
+  background(255);  // set the background
+}
+function draw(){
+  if(keyIsDown(CHANGE)){// when the key is 32, that means key speace is down
+    fill(0, 0, 150);  // choose one color
+    ellipse(mouseX, mouseY, 75, 75);//mousx and y and the size
+  }
+}
+
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {//when left arrow is pressed
+    fill(0, 0, 255);//color
+    ellipse(100, 100, 50, 50);//draw the circle
+  } else if (keyCode === RIGHT_ARROW) {// when right arrow is pressed
+    fill(0, 255, 0);
+    ellipse(200, 200, 50, 50);
+  }
+}
