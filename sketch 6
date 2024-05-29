@@ -1,0 +1,21 @@
+function setup(){
+    createCanvas(800, 800);
+}
+
+function draw() {
+    background(220);
+    if(mouseIsPressed){
+        let colors = [ 
+            [255, 0, 0],
+            [255, 255, 0],
+            [255, 150, 255],
+            [0, 200, 50],
+            [0, 255, 100]
+        ];//color
+
+        for (let i = 5; i > 0; i--) { // for loop for 5 color 
+            fill(colors[i-1]);
+            circle(mouseX, mouseY, i*10); // the field become bigger
+        }
+    }
+}
