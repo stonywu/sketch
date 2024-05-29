@@ -13,18 +13,14 @@ function mousePressed() {
     color(0, 0, 255),    
     color(255, 255, 0),  
     color(255, 0, 255),  
-    color(0, 255, 255),  
-    color(128, 0, 128),  
-    color(255, 100, 0),  
-    color(0, 120, 120),  
-    color(128, 188, 0)   
+
   ];
 
   
   let colorIndex = 0;
 
   //draw 10 cube
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 5; i++) {
     //color at 
     fill(colors[colorIndex]);
 
