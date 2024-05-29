@@ -1,0 +1,40 @@
+function setup() {
+  createCanvas(400, 400);
+  background(255);  // set
+}
+
+
+
+function mousePressed() {
+  // set a color range
+  let colors = [
+    color(255, 0, 0),    
+    color(0, 255, 0),    
+    color(0, 0, 255),    
+    color(255, 255, 0),  
+    color(255, 0, 255),  
+    color(0, 255, 255),  
+    color(128, 0, 128),  
+    color(255, 100, 0),  
+    color(0, 120, 120),  
+    color(128, 188, 0)   
+  ];
+
+  
+  let colorIndex = 0;
+
+  //draw 10 cube
+  for (let i = 0; i < 10; i++) {
+    //color at 
+    fill(colors[colorIndex]);
+
+    
+    rect(mouseX + i * 20, mouseY, 20, 20);//the cube in the mouse position
+
+    
+    colorIndex++;
+    if (colorIndex >= colors.length) {
+      colorIndex = 0;//if it at the last color, go back to the first color again
+    }
+  }
+}
